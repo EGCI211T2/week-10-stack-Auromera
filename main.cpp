@@ -1,4 +1,5 @@
 #include<iostream>
+#include <cstring>
 using namespace std;
 
 #include "stack.h"
@@ -12,15 +13,15 @@ int main(int argc, char **argv){
       s.push(6);
       s.pop();
 
- /*
-  Exercise 1*/
-    /*
+
+  //Exercise 1*/
+    
     int i;
     for(i=1;i<argc;i++){
-      //  if(  x)  s.pop();
+       if(strcmp(argv[i], "x") == 0)  s.pop();
         else s.push(atoi(argv[i]));
     }
-     */
+     
 
 
 
